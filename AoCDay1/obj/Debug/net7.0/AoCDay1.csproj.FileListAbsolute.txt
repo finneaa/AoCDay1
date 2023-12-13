@@ -1,0 +1,15 @@
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\bin\Debug\net7.0\AoCDay1.exe
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\bin\Debug\net7.0\AoCDay1.deps.json
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\bin\Debug\net7.0\AoCDay1.runtimeconfig.json
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\bin\Debug\net7.0\AoCDay1.dll
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\bin\Debug\net7.0\AoCDay1.pdb
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.csproj.AssemblyReference.cache
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.AssemblyInfoInputs.cache
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.AssemblyInfo.cs
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.csproj.CoreCompileInputs.cache
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.dll
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\refint\AoCDay1.dll
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.pdb
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\AoCDay1.genruntimeconfig.cache
+D:\.NetCode\Advent of Code\AoCDay1\AoCDay1\obj\Debug\net7.0\ref\AoCDay1.dll
