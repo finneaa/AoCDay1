@@ -75,18 +75,89 @@ class Program
     {
         int number = 0;
         List<string> foundNumbers = new List<string>();
+        int startpos = 0;   //posision in line for start of substring
         foreach (char c in line)
         {
-            if(char.IsDigit(c)){
+            //First check for number.
+            if(char.IsDigit(c))
+            {
                 foundNumbers.Add(Char.ToString(c));
                 
+            }else if("o" == c.ToString() & (line.Length -startpos) >=3) //Check for substring "one"
+            {
+                if(line.Substring(startpos, 3) == "one")
+                {
+                    foundNumbers.Add("1");
+                }
+            }else if("t" == c.ToString()) //Check for substring "two" and "three"
+            {
+                if((line.Length -startpos) >=3)
+                {
+                    if(line.Substring(startpos, 3) == "two")
+                    {
+                      foundNumbers.Add("2");
+                    }
+                }
+                if((line.Length -startpos) >=5)
+                {
+                    if(line.Substring(startpos, 5) == "three")
+                    {
+                        foundNumbers.Add("3");
+                    }
+                }
+            }else if("f" == c.ToString()) //Check for substring "four" and "five"
+            {
+                if((line.Length -startpos) >=4)
+                {
+                    if(line.Substring(startpos, 4) == "four")
+                    {
+                        foundNumbers.Add("4");
+                    }
+                }
+                if((line.Length -startpos) >=4)
+                {
+                    if(line.Substring(startpos, 4) == "five")
+                    {
+                        foundNumbers.Add("5");
+                    }
+                }
+            }else if("s" == c.ToString()) //Check for substring "six" and "seven"
+            {
+                if((line.Length -startpos) >=3)
+                {
+                    if(line.Substring(startpos, 3) == "six")
+                    {
+                        foundNumbers.Add("6");
+                    }
+                }
+                if((line.Length -startpos) >=5)
+                {
+                    if(line.Substring(startpos, 5) == "seven")
+                    {
+                        foundNumbers.Add("7");
+                    }
+                }
+            }else if("e" == c.ToString() & (line.Length -startpos) >=5) //Check for substring "eight"
+            {
+                if(line.Substring(startpos, 5) == "eight")
+                {
+                    foundNumbers.Add("8");
+                }
+            }else if("n" == c.ToString() & (line.Length -startpos) >=4) //Check for substring "nine"
+            {
+                if(line.Substring(startpos, 4) == "nine")
+                {
+                    foundNumbers.Add("9");
+                }
             }
+            
+            startpos += 1;
         }
         String tempNumber = "Failed";
-        if(foundNumbers.Count>=1){
+        if(foundNumbers.Count>=1) //Combine first and last number found
+        {
             tempNumber = string.Concat(foundNumbers[0], foundNumbers[foundNumbers.Count-1]);
             Int32.TryParse(tempNumber, out number);
-            //Console.WriteLine(tempNumber);
         }
         return number;
 
@@ -99,10 +170,18 @@ class Program
         FileReader inputText = new FileReader();
         string[]input = inputText.ReadFile(path);
         long sum = 0;
+        Console.WriteLine("Start of Part1");
         foreach (string item in input)
         {
             int rightNumber = p.FindNumber(item);
-            //Console.WriteLine(rightNumber);
+            sum += rightNumber;
+        }
+        Console.WriteLine(sum);
+        sum = 0;
+        Console.WriteLine("Start of Part2");
+        foreach (string item in input)
+        {
+            int rightNumber = p.FindNumberAdvansed(item);
             sum += rightNumber;
         }
         Console.WriteLine(sum);
